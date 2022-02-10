@@ -19,8 +19,8 @@ class Computer {
         this._platformItems = fs.existsSync(path.resolve(platformFilePath)) ? loadJsonFileSync(platformFilePath) : loadJsonFileSync(path.resolve('node_modules/@fakerjs/computer/', platformFilePath));
     }
 
-    _selectRandom(Itemss) {
-        return Itemss[Math.floor(Math.random() * Itemss.length)];
+    _selectRandom(items) {
+        return items[Math.floor(Math.random() * items.length)];
     }
 
     os() {
